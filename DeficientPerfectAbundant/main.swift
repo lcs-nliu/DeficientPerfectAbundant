@@ -40,6 +40,11 @@ while true {
         
     }
     
+    guard integerGiven != 1 else {
+        print("1 is a deficient ")
+    exit(0)
+    }
+    
     // If we've made it here, the input is valid
     positiveInt = integerGiven
     
@@ -47,8 +52,6 @@ while true {
     break
     
 }
-
-
 // Function to find the sum of proper divisors
 func sumProperDiv() -> Int {
     
@@ -65,6 +68,7 @@ func sumProperDiv() -> Int {
     
     return sumOfProperDiv
 }
+
 
 
 // If statement to determine if the integer given is deficient, perfect, or abundant
